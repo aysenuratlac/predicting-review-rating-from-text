@@ -105,7 +105,7 @@ python experiment.py \
   --model_type logistic \
   --vec_type tfidf \
   --token_type word \
-  --exp exp_01
+  --exp 1
 ```
 
 **SVM with Syllable-level Tokenization and Class Weighting**
@@ -116,7 +116,7 @@ python experiment.py \
   --vec_type count \
   --token_type syllable \
   --class_weight balanced \
-  --exp exp_02
+  --exp 2
 ```
 
 **Logistic Regression with Character-level Tokenization and Downsampling**
@@ -127,7 +127,7 @@ python experiment.py \
   --vec_type tfidf \
   --token_type char \
   --downsample \
-  --exp exp_03
+  --exp 3
 ```
 
 ---
@@ -154,7 +154,3 @@ If you find this work useful, please cite:
 
 > Atlaç, A. (2026). *Predicting Review Ratings from Text: A Comparative Study of Tokenization, Vectorization, and Machine Learning Methods*. Final Thesis, Istanbul Technical University.
 
-
----
-
-⭐ Contributions, issues, and feedback are welcome.
