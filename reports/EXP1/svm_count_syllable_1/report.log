@@ -1,0 +1,122 @@
+================================================================================
+TURKISH NLP CLASSIFICATION - EXPERIMENT PIPELINE
+================================================================================
+Random seed: 42
+Ana sonuçlar klasörü: svm_count_syllable
+================================================================================
+
+[1/8] Veri yükleniyor...
+Dataset Bilgileri
+============================================================
+Toplam satır: 838,582
+Toplam sütun: 2
+Sütunlar: review_text, review_rating
+
+Sınıf Dağılımı (Rating)
+============================================================
+review_rating
+1    109646
+2     27559
+3     48715
+4     91795
+5    560867
+Name: count, dtype: int64
+Toplam: 838,582
+
+Metin Uzunluğu İstatistikleri
+============================================================
+count    838582.000000
+mean        151.363768
+std         193.415870
+min           1.000000
+25%          43.000000
+50%          93.000000
+75%         186.000000
+max        4093.000000
+Name: text_length, dtype: float64
+
+[2/8] Senaryolar tanımlanıyor...
+Toplam 2 senaryo tanımlandı:
+   1. svm_count_syllable_with_outliers
+   2. svm_count_syllable_without_outliers
+
+[3/8] Senaryolar çalıştırılıyor...
+
+================================================================================
+
+================================================================================
+SENARYO 1/2
+================================================================================
+# SENARYO: svm_count_syllable_with_outliers
+
+Klasör oluşturuldu: svm_count_syllable/svm_count_syllable_with_outliers_20260108_224741
+
+[1/7] Veri hazırlanıyor...
+Minimum sınıf boyutu: 27,559
+Her sınıftan 27,559 örnek alınacak...
+
+review_rating 1: 27,559 örnek
+review_rating 2: 27,559 örnek
+review_rating 3: 27,559 örnek
+review_rating 4: 27,559 örnek
+review_rating 5: 27,559 örnek
+
+Toplam dengeli veri: 137,795
+Min class a downsample yapıldı!
+  Outlier'lar korundu: 137,795 örnek
+✅ TurkishSyllableTokenizer hazır!
+  Model: svm
+  Vectorizer: count
+  Tokenizer: syllable
+Downsample? True
+outlier? False
+  CV Accuracy: 0.2756 ± 0.0059
+
+[7/7] Sonuçlar kaydediliyor...
+  ✓ scenario_params.json
+  ✓ cv_results.json
+
+✅ Senaryo tamamlandı: svm_count_syllable_with_outliers
+   Klasör: svm_count_syllable/svm_count_syllable_with_outliers_20260108_224741
+
+================================================================================
+SENARYO 2/2
+================================================================================
+# SENARYO: svm_count_syllable_without_outliers
+
+Klasör oluşturuldu: svm_count_syllable/svm_count_syllable_without_outliers_20260108_232134
+
+[1/7] Veri hazırlanıyor...
+Minimum sınıf boyutu: 27,559
+Her sınıftan 27,559 örnek alınacak...
+
+review_rating 1: 27,559 örnek
+review_rating 2: 27,559 örnek
+review_rating 3: 27,559 örnek
+review_rating 4: 27,559 örnek
+review_rating 5: 27,559 örnek
+
+Toplam dengeli veri: 137,795
+Min class a downsample yapıldı!
+  Outlier'lar kaldırıldı:
+    Orijinal: 137,795
+    Temizlenmiş: 131,449
+    Kaldırılan: 6,346 (4.61%)
+✅ TurkishSyllableTokenizer hazır!
+  Model: svm
+  Vectorizer: count
+  Tokenizer: syllable
+Downsample? True
+outlier? True
+  CV Accuracy: 0.2856 ± 0.0079
+
+[7/7] Sonuçlar kaydediliyor...
+  ✓ scenario_params.json
+  ✓ cv_results.json
+
+✅ Senaryo tamamlandı: svm_count_syllable_without_outliers
+   Klasör: svm_count_syllable/svm_count_syllable_without_outliers_20260108_232134
+
+
+################################################################################
+# TÜM SENARYOLAR TAMAMLANDI

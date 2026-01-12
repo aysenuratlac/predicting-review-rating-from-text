@@ -1,0 +1,100 @@
+================================================================================
+TURKISH NLP CLASSIFICATION - EXPERIMENT PIPELINE
+================================================================================
+Random seed: 42
+Ana sonuçlar klasörü: svm_count_word_2
+================================================================================
+
+[1/8] Veri yükleniyor...
+Dataset Bilgileri
+============================================================
+Toplam satır: 838,582
+Toplam sütun: 2
+Sütunlar: review_text, review_rating
+
+Sınıf Dağılımı (Rating)
+============================================================
+review_rating
+1    109646
+2     27559
+3     48715
+4     91795
+5    560867
+Name: count, dtype: int64
+Toplam: 838,582
+
+Metin Uzunluğu İstatistikleri
+============================================================
+count    838582.000000
+mean        151.363768
+std         193.415870
+min           1.000000
+25%          43.000000
+50%          93.000000
+75%         186.000000
+max        4093.000000
+Name: text_length, dtype: float64
+
+[2/8] Senaryolar tanımlanıyor...
+Toplam 2 senaryo tanımlandı:
+   1. svm_count_word_2_with_outliers
+   2. svm_count_word_2_without_outliers
+
+[3/8] Senaryolar çalıştırılıyor...
+
+================================================================================
+
+================================================================================
+SENARYO 1/2
+================================================================================
+# SENARYO: svm_count_word_2_with_outliers
+
+Klasör oluşturuldu: svm_count_word_2/svm_count_word_2_with_outliers_20260110_011745
+
+[1/7] Veri hazırlanıyor...
+  Outlier'lar korundu: 838,582 örnek
+✅ TurkishWordTokenizer hazır! (NLTK)
+  Model: svm
+  Vectorizer: count
+  Tokenizer: word
+Downsample? False
+outlier? False
+CV Accuracy: 0.6332 ± 0.0072
+
+[7/7] Sonuçlar kaydediliyor...
+  ✓ scenario_params.json
+  ✓ cv_results.json
+
+✅ Senaryo tamamlandı: svm_count_word_2_with_outliers
+   Klasör: svm_count_word_2/svm_count_word_2_with_outliers_20260110_011745
+
+================================================================================
+SENARYO 2/2
+================================================================================
+# SENARYO: svm_count_word_2_without_outliers
+
+Klasör oluşturuldu: svm_count_word_2/svm_count_word_2_without_outliers_20260110_033459
+
+[1/7] Veri hazırlanıyor...
+  Outlier'lar kaldırıldı:
+    Orijinal: 838,582
+    Temizlenmiş: 796,998
+    Kaldırılan: 41,584 (4.96%)
+✅ TurkishWordTokenizer hazır! (NLTK)
+  Model: svm
+  Vectorizer: count
+  Tokenizer: word
+Downsample? False
+outlier? True
+CV Accuracy: 0.5907 ± 0.0044
+
+[7/7] Sonuçlar kaydediliyor...
+  ✓ scenario_params.json
+  ✓ cv_results.json
+
+✅ Senaryo tamamlandı: svm_count_word_2_without_outliers
+   Klasör: svm_count_word_2/svm_count_word_2_without_outliers_20260110_033459
+
+
+################################################################################
+# TÜM SENARYOLAR TAMAMLANDI

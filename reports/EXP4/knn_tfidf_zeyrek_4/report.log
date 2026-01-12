@@ -1,0 +1,100 @@
+================================================================================
+TURKISH NLP CLASSIFICATION - EXPERIMENT PIPELINE
+================================================================================
+Random seed: 42
+Ana sonuçlar klasörü: knn_tfidf_zeyrek_4
+================================================================================
+
+[1/8] Veri yükleniyor...
+Dataset Bilgileri
+============================================================
+Toplam satır: 838,582
+Toplam sütun: 2
+Sütunlar: review_text, review_rating
+
+Sınıf Dağılımı (Rating)
+============================================================
+review_rating
+1    109646
+2     27559
+3     48715
+4     91795
+5    560867
+Name: count, dtype: int64
+Toplam: 838,582
+
+Metin Uzunluğu İstatistikleri
+============================================================
+count    838582.000000
+mean        151.363768
+std         193.415870
+min           1.000000
+25%          43.000000
+50%          93.000000
+75%         186.000000
+max        4093.000000
+Name: text_length, dtype: float64
+
+[2/8] Senaryolar tanımlanıyor...
+Toplam 2 senaryo tanımlandı:
+   1. knn_tfidf_zeyrek_4_with_outliers
+   2. knn_tfidf_zeyrek_4_without_outliers
+
+[3/8] Senaryolar çalıştırılıyor...
+
+================================================================================
+
+================================================================================
+SENARYO 1/2
+================================================================================
+# SENARYO: knn_tfidf_zeyrek_4_with_outliers
+
+Klasör oluşturuldu: knn_tfidf_zeyrek_4/knn_tfidf_zeyrek_4_with_outliers_20260110_232754
+
+[1/7] Veri hazırlanıyor...
+  Outlier'lar korundu: 838,582 örnek
+✅ TurkishWordTokenizer hazır! (NLTK)
+  Model: knn
+  Vectorizer: tfidf
+  Tokenizer: zeyrek
+Downsample? False
+outlier? False
+CV Accuracy: 0.6668 ± 0.0121
+
+[7/7] Sonuçlar kaydediliyor...
+  ✓ scenario_params.json
+  ✓ cv_results.json
+
+✅ Senaryo tamamlandı: knn_tfidf_zeyrek_4_with_outliers
+   Klasör: knn_tfidf_zeyrek_4/knn_tfidf_zeyrek_4_with_outliers_20260110_232754
+
+================================================================================
+SENARYO 2/2
+================================================================================
+# SENARYO: knn_tfidf_zeyrek_4_without_outliers
+
+Klasör oluşturuldu: knn_tfidf_zeyrek_4/knn_tfidf_zeyrek_4_without_outliers_20260111_042448
+
+[1/7] Veri hazırlanıyor...
+  Outlier'lar kaldırıldı:
+    Orijinal: 838,582
+    Temizlenmiş: 796,998
+    Kaldırılan: 41,584 (4.96%)
+✅ TurkishWordTokenizer hazır! (NLTK)
+  Model: knn
+  Vectorizer: tfidf
+  Tokenizer: zeyrek
+Downsample? False
+outlier? True
+CV Accuracy: 0.6806 ± 0.0015
+
+[7/7] Sonuçlar kaydediliyor...
+  ✓ scenario_params.json
+  ✓ cv_results.json
+
+✅ Senaryo tamamlandı: knn_tfidf_zeyrek_4_without_outliers
+   Klasör: knn_tfidf_zeyrek_4/knn_tfidf_zeyrek_4_without_outliers_20260111_042448
+
+
+################################################################################
+# TÜM SENARYOLAR TAMAMLANDI

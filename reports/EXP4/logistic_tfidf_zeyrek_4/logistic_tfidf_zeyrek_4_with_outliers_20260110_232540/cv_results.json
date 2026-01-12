@@ -1,0 +1,50 @@
+{
+  "accuracy": {
+    "test_mean": "0.7803",
+    "test_std": "0.0006",
+    "test_ci_lower": "0.7796",
+    "test_ci_upper": "0.7810",
+    "test_scores": [
+      "0.7799",
+      "0.7807",
+      "0.7801",
+      "0.7798",
+      "0.7811"
+    ],
+    "train_mean": "0.7869",
+    "train_std": "0.0005",
+    "overfitting_gap": "0.0066"
+  },
+  "f1_macro": {
+    "test_mean": "0.4449",
+    "test_std": "0.0016",
+    "test_ci_lower": "0.4429",
+    "test_ci_upper": "0.4469",
+    "test_scores": [
+      "0.4437",
+      "0.4446",
+      "0.4455",
+      "0.4434",
+      "0.4474"
+    ],
+    "train_mean": "0.4640",
+    "train_std": "0.0013",
+    "overfitting_gap": "0.0191"
+  },
+  "f1_weighted": {
+    "test_mean": "0.7400",
+    "test_std": "0.0006",
+    "test_ci_lower": "0.7393",
+    "test_ci_upper": "0.7407",
+    "test_scores": [
+      "0.7397",
+      "0.7401",
+      "0.7399",
+      "0.7394",
+      "0.7409"
+    ],
+    "train_mean": "0.7480",
+    "train_std": "0.0005",
+    "overfitting_gap": "0.0080"
+  }
+}

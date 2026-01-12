@@ -1,0 +1,25 @@
+model,vectorization,tokenization,outlier,accuracy,f1_macro,f1_weighted
+logistic,count,char,without_outliers,0.686 ± 0.002,0.495 ± 0.003,0.723 ± 0.002
+logistic,count,char,with_outliers,0.681 ± 0.001,0.495 ± 0.001,0.719 ± 0.001
+logistic,count,syllable,without_outliers,0.670 ± 0.003,0.477 ± 0.002,0.709 ± 0.002
+logistic,count,syllable,with_outliers,0.666 ± 0.001,0.478 ± 0.002,0.705 ± 0.001
+logistic,count,word,without_outliers,0.686 ± 0.003,0.495 ± 0.002,0.723 ± 0.002
+logistic,count,word,with_outliers,0.680 ± 0.001,0.494 ± 0.002,0.718 ± 0.001
+logistic,tfidf,char,without_outliers,0.691 ± 0.002,0.504 ± 0.002,0.727 ± 0.002
+logistic,tfidf,char,with_outliers,0.687 ± 0.002,0.504 ± 0.002,0.723 ± 0.002
+logistic,tfidf,syllable,without_outliers,0.667 ± 0.002,0.477 ± 0.001,0.706 ± 0.002
+logistic,tfidf,syllable,with_outliers,0.663 ± 0.002,0.479 ± 0.002,0.703 ± 0.001
+logistic,tfidf,word,without_outliers,0.687 ± 0.002,0.498 ± 0.002,0.725 ± 0.002
+logistic,tfidf,word,with_outliers,0.681 ± 0.001,0.497 ± 0.002,0.720 ± 0.001
+svm,count,char,without_outliers,0.593 ± 0.034,0.284 ± 0.007,0.586 ± 0.017
+svm,count,char,with_outliers,0.641 ± 0.014,0.259 ± 0.011,0.587 ± 0.008
+svm,count,syllable,without_outliers,0.594 ± 0.033,0.268 ± 0.008,0.577 ± 0.012
+svm,count,syllable,with_outliers,0.564 ± 0.262,0.217 ± 0.050,0.508 ± 0.189
+svm,count,word,without_outliers,0.525 ± 0.007,0.280 ± 0.004,0.550 ± 0.005
+svm,count,word,with_outliers,0.594 ± 0.016,0.286 ± 0.008,0.585 ± 0.008
+svm,tfidf,char,without_outliers,0.045 ± 0.001,0.033 ± 0.001,0.008 ± 0.000
+svm,tfidf,char,with_outliers,0.043 ± 0.003,0.034 ± 0.002,0.008 ± 0.001
+svm,tfidf,syllable,without_outliers,0.043 ± 0.001,0.033 ± 0.002,0.008 ± 0.001
+svm,tfidf,syllable,with_outliers,0.042 ± 0.002,0.032 ± 0.002,0.008 ± 0.001
+svm,tfidf,word,without_outliers,0.044 ± 0.003,0.035 ± 0.001,0.009 ± 0.000
+svm,tfidf,word,with_outliers,0.046 ± 0.004,0.036 ± 0.001,0.009 ± 0.001

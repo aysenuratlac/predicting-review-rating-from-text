@@ -1,0 +1,20 @@
+{
+  "scenario_name": "logistic_tfidf_char_without_outliers",
+  "timestamp": "20260108_223251",
+  "model_type": "logistic",
+  "vectorizer_type": "tfidf",
+  "tokenizer_type": "char",
+  "remove_outliers": true,
+  "downsample": true,
+  "outlier_stats": {
+    "lower_percentile": 2.5,
+    "upper_percentile": 97.5,
+    "lower_bound": 7.0,
+    "upper_bound": 782.0,
+    "original_size": 137795,
+    "cleaned_size": 131449,
+    "removed_count": 6346,
+    "removed_percentage": 4.605392067926993
+  },
+  "random_seed": 42
+}

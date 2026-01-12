@@ -1,0 +1,11 @@
+{
+  "scenario_name": "svm_count_char_with_outliers",
+  "timestamp": "20260108_223541",
+  "model_type": "svm",
+  "vectorizer_type": "count",
+  "tokenizer_type": "char",
+  "remove_outliers": false,
+  "downsample": true,
+  "outlier_stats": null,
+  "random_seed": 42
+}

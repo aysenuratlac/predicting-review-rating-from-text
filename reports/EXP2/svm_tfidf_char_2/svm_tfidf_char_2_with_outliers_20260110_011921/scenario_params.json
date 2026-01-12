@@ -1,0 +1,11 @@
+{
+  "scenario_name": "svm_tfidf_char_2_with_outliers",
+  "timestamp": "20260110_011921",
+  "model_type": "svm",
+  "vectorizer_type": "tfidf",
+  "tokenizer_type": "char",
+  "remove_outliers": false,
+  "downsample": false,
+  "outlier_stats": null,
+  "random_seed": 42
+}

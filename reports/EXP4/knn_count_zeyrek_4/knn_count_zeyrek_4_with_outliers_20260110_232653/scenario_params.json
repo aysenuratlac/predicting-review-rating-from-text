@@ -1,0 +1,11 @@
+{
+  "scenario_name": "knn_count_zeyrek_4_with_outliers",
+  "timestamp": "20260110_232653",
+  "model_type": "knn",
+  "vectorizer_type": "count",
+  "tokenizer_type": "zeyrek",
+  "remove_outliers": false,
+  "downsample": false,
+  "outlier_stats": null,
+  "random_seed": 42
+}

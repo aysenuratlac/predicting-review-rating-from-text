@@ -1,0 +1,11 @@
+{
+  "scenario_name": "logistic_count_char_with_outliers",
+  "timestamp": "20260108_222700",
+  "model_type": "logistic",
+  "vectorizer_type": "count",
+  "tokenizer_type": "char",
+  "remove_outliers": false,
+  "downsample": true,
+  "outlier_stats": null,
+  "random_seed": 42
+}

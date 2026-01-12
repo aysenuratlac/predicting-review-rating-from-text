@@ -1,0 +1,11 @@
+{
+  "scenario_name": "logistic_tfidf_word_with_outliers",
+  "timestamp": "20260108_222746",
+  "model_type": "logistic",
+  "vectorizer_type": "tfidf",
+  "tokenizer_type": "word",
+  "remove_outliers": false,
+  "downsample": true,
+  "outlier_stats": null,
+  "random_seed": 42
+}

@@ -1,0 +1,11 @@
+{
+  "scenario_name": "svm_count_syllable_with_outliers",
+  "timestamp": "20260108_224741",
+  "model_type": "svm",
+  "vectorizer_type": "count",
+  "tokenizer_type": "syllable",
+  "remove_outliers": false,
+  "downsample": true,
+  "outlier_stats": null,
+  "random_seed": 42
+}

@@ -1,0 +1,11 @@
+{
+  "scenario_name": "knn_tfidf_word_2_with_outliers",
+  "timestamp": "20260109_075606",
+  "model_type": "knn",
+  "vectorizer_type": "tfidf",
+  "tokenizer_type": "word",
+  "remove_outliers": false,
+  "downsample": false,
+  "outlier_stats": null,
+  "random_seed": 42
+}

@@ -1,0 +1,11 @@
+{
+  "scenario_name": "logistic_count_syllable_2_with_outliers",
+  "timestamp": "20260109_201128",
+  "model_type": "logistic",
+  "vectorizer_type": "count",
+  "tokenizer_type": "syllable",
+  "remove_outliers": false,
+  "downsample": false,
+  "outlier_stats": null,
+  "random_seed": 42
+}
